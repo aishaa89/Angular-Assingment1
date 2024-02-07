@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+.line{
+    position: relative;
+    
+}
+.line::before{
+    content: " ";
+    width: 20%;
+    height: 5px;
+    position: absolute;
+    left: 25%;
+    top: 5px;
+    background-color: white;
+}
+.line::after{
+    content: " ";
+    width: 20%;
+    height: 5px;
+    position: absolute;
+    right: 25%;
+    top: 5px;
+    background-color: white;
+}

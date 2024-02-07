@@ -1,0 +1,22 @@
+input{
+    box-shadow: none !important;
+}
+
+.line::before{
+    background-color: #2C3E50;
+}
+.line::after{
+
+    background-color: #2C3E50;
+}
+label{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+.top{
+    color: #1ABC9C;
+   visibility: visible;
+    opacity: 1;
+    transition: all 2s;
+}

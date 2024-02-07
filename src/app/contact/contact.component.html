@@ -1,0 +1,36 @@
+
+
+<div class="contact  d-flex flex-column justify-content-between align-items-center overflow-auto p-5">
+
+<h2 class="text-uppercase   fs-1 fw-bolder mt-4">PORTFOLIO COMPONENT</h2>
+    <div class="line w-50 mx-auto d-flex justify-content-center mt-4">
+       <i class="fa-solid fa-star"></i>
+    </div>
+
+
+
+  <form  class="w-50 p-3 mx-auto mt-5 ng-untouched ng-pristine ng-valid">
+    <label  for="userName" class="position-relative top-0 mt-2" [ngClass]="{top: showLable}">
+        userName : 
+    </label>
+    <input (input)="showlabelName()"  [(ngModel)]="userName" id="userName" type="text" placeholder="userName" name="userName" class="form-control border-0 border-bottom py-3 position-relative">
+    
+    <label for="userAge" class="position-relative top-0 mt-2" [ngClass]="{top: showLableAge}">
+        userAge :
+     </label>
+        <input [(ngModel)]="userAge" (input)="showlabelAge()" id="userAge" type="text" placeholder="userAge" name="userName" class="form-control border-0 border-bottom py-3 position-relative">
+        
+        <label  for="userEmail" [ngClass]="{top:showLableEmail}" class="position-relative top-0 mt-2">
+            userEmail :
+           </label>
+            <input [(ngModel)]="userEmail" (input)="showlabelEmail()"  id="userEmail" type="text" placeholder="userEmail" name="userName" class="form-control border-0 border-bottom py-3 position-relative ">
+           
+            <label [ngClass]="{top: showLablepass}" for="userPassword" class="position-relative top-0 mt-2" >
+                userPassword : 
+            </label>
+            <input [(ngModel)]="userPass"  (input)="showlabelPass()"  id="userPassword" type="text" placeholder="userPassword" name="userName" class="form-control border-0 border-bottom py-3 position-relative ">
+           
+            <button  class="btn mt-4 text-white" style="background-color: #1abc9c;"> 
+                send Message </button>
+            </form>
+           </div>

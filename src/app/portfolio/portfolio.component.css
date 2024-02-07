@@ -1,0 +1,20 @@
+.line::before{
+    background-color: #2C3E50;
+}
+.line::after{
+
+    background-color: #2C3E50;
+}
+.port-img:hover .layer{
+    opacity: 1;
+
+}
+.layer{
+    background-color: #1abc9ce6;
+    opacity: 0;
+    cursor: pointer;
+    transition: .6s opacity;
+}
+.model{
+    cursor: pointer;
+}

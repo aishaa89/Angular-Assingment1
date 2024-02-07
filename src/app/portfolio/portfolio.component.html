@@ -1,0 +1,24 @@
+
+<div class="portofilio  d-flex flex-column justify-content-between align-items-center overflow-auto p-5">
+    <h2 class="text-uppercase   fs-1 fw-bolder mt-4">PORTFOLIO COMPONENT</h2>
+    <div class="line w-50 mx-auto d-flex justify-content-center mt-4">
+       <i class="fa-solid fa-star"></i>
+    </div>
+    <div class="portifolio-content mt-4">
+        <div class="container">
+            <div class="row gy-4">
+                <div *ngFor="let item of imgsources"  class="col-md-4">
+                    <div (click)="openPopup(item)" class="port-img rounded-3 position-relative overflow-hidden">
+                    <img [src]="item" class="w-100" alt="">
+
+                    <div  class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="show" (click)="closePopup()" class="model position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+        <img class="w-50" alt="" [src]="imgPopup"></div>
+    </div>
